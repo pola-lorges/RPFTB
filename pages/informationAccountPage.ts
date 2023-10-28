@@ -47,7 +47,32 @@ export class InformationAccountPage{
         this.continueBtn = page.getByRole('link', { name: 'Continue' })
      }
 
-     async Signup(name, emailAddress){
+     async InformationAccountForm(gender, password, days, months, years, firstname, lastname, company, adress, country, state, city, zipcode, mobileNumber){
+      
+           if (gender == "Mr"){
+            await this.genderMr.check()
+           }else if (gender == "Mrs"){
+            await this.genderMrs.check()
+           }
+
+           await this.password.fill(password)
+           await this.days.selectOption(days)
+           await this.months.selectOption(months)
+           await this.years.selectOption(years)
+           await this.newsletter.check()
+           await this.offer.check()
+           await this.firstName.fill(firstname)
+           await this.lastName.fill(lastname)
+           await this.company.fill(company)
+           await this.country.selectOption(country)
+           await this.adress.fill(adress)
+           await this.state.fill(state)
+           await this.city.fill(city)
+           await this.zipcode.fill(zipcode)
+           await this.mobileNumber.fill(mobileNumber)
+           await this.createAccountBtn.click()
+
+           await expect(this.page).toHaveURL("https://www.automationexercise.com/account_created")
        
      }
 }

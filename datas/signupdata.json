@@ -1,4 +1,18 @@
 {
     "name" : "POLA",
-    "Email": "email@xyz.com"
+    "Email": "email@xyz.com",
+    "gender" : "Mrs", 
+    "password": "azerty123", 
+    "days": "10", 
+    "months": "4", 
+    "years": "2000", 
+    "firstname": "RPFTB PTF Ltd", 
+    "lastname": " ", 
+    "company": "RPFTB PTF Ltd", 
+    "adress": "Melbourne, Australia, AUD100.00", 
+    "country": "Canada", 
+    "state": "Quebec", 
+    "city": "Montreal", 
+    "zipcode": "13456", 
+    "mobileNumber": "+1234567890"
 }
