@@ -71,8 +71,9 @@ export class InformationAccountPage{
            await this.zipcode.fill(zipcode)
            await this.mobileNumber.fill(mobileNumber)
            await this.createAccountBtn.click()
+     }
 
-           await expect(this.page).toHaveURL("https://www.automationexercise.com/account_created")
-       
+     async checkRegisterwin(){
+        await expect(this.page).toHaveURL("https://automationexercise.com/account_created")
      }
 }

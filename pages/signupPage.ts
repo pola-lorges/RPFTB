@@ -31,8 +31,6 @@ export class SignupPage{
         await this.loginEmail.fill(email)
         await this.password.fill(password)
         await this.loginBtn.click()
-
-        await expect(this.page).toHaveURL("https://automationexercise.com")
      }
     
 }

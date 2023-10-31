@@ -1,0 +1,19 @@
+{
+    "name" : "Ulrich",
+    "email": "emailulrich@xyz.com",
+    "gender" : "Mrs", 
+    "password": "emailulrich@", 
+    "days": "10", 
+    "months": "4", 
+    "years": "2000", 
+    "firstname": "RPFTB PTF Ltd", 
+    "lastname": " John", 
+    "company": "RPFTB PTF Ltd", 
+    "adress1": "Melbourne, Australia, AUD100.00", 
+    "adress2": "Melbourne, Australia, AUD100.00",
+    "country": "Canada", 
+    "state": "Quebec", 
+    "city": "Montreal", 
+    "zipcode": "13456", 
+    "mobileNumber": "+1234567890"
+}

@@ -1,6 +1,9 @@
 import { test, expect } from '@playwright/test';
 import { HomePage } from '../../pages/homePage';
 import { SignupPage } from '../../pages/signupPage';
+import * as validLogindata from '../../datas/ValidLogin.json';
+import * as invalidLogindata from '../../datas/InvalidLogin.json';
+
 
 test('Login User Invalid scenario', async ({ page }) => {
 
@@ -9,8 +12,8 @@ test('Login User Invalid scenario', async ({ page }) => {
 
     await homePage.gotoHomepage();
     await homePage.gotoSignupPage();
-    await signupPage.Login('pola', 'email@xyz.com')
-    await homePage.checkValidlogin()
+    await signupPage.Login(invalidLogindata.email, invalidLogindata.password)
+    await homePage.checkInvalidlogin()
 
 });
 
@@ -21,7 +24,7 @@ test('Login User Valid scenario', async ({ page }) => {
 
     await homePage.gotoHomepage();
     await homePage.gotoSignupPage();
-    await signupPage.Login('pola', 'email@xyz.com')
-    await homePage.checkInvalidlogin()
+    await signupPage.Login(validLogindata.email, validLogindata.password)
+    await homePage.checkValidlogin()
 
 });
