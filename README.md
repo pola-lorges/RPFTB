@@ -1,4 +1,3 @@
-# RPFTB
 This is a project for UI and API test automation on the site https://automationexercise.com/
 
 I automated the following UI tests:
